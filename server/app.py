@@ -17,6 +17,7 @@ def count(parameter):
     numbers = '\n'.join(str(i) for i in range(1, parameter + 1))
     return f'Counting numbers from 1 to {parameter}:\n{numbers}'
 
+@app.route('/math/<float:num1><operation><float:num2>')
 
 
 if __name__ == '__main__':
